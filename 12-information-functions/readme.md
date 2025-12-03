@@ -72,7 +72,7 @@ SELECT
 
 -- Obtenir le nom de la base de données sélectionnée
 SELECT DATABASE();
--- Résultat : 'elzero' ou NULL si aucune base n'est sélectionnée
+-- Résultat : 'tab' ou NULL si aucune base n'est sélectionnée
 
 -- Cas d'usage : Vérifier la base active
 SELECT 
@@ -192,7 +192,7 @@ SELECT ROW_COUNT();
 | Fonction | Description | Exemple de Résultat |
 |----------|-------------|---------------------|
 | **USER()** | Utilisateur connecté | `'root@localhost'` |
-| **DATABASE()** | Base de données active | `'elzero'` |
+| **DATABASE()** | Base de données active | `'tab'` |
 | **VERSION()** | Version MySQL | `'8.0.35'` |
 | **CONNECTION_ID()** | ID de session | `42` |
 | **CHARSET()** | Jeu de caractères | `'utf8mb4'` |

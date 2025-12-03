@@ -15,14 +15,14 @@ Avant de créer des tables, vous devez d'abord créer et gérer des bases de don
    CRÉER UNE BASE DE DONNÉES
    ======================================== */
 
--- Créer une nouvelle base de données nommée 'elzero'
-CREATE DATABASE elzero;
+-- Créer une nouvelle base de données nommée 'my_tab'
+CREATE DATABASE my_tab;
 
 -- ✅ Bonne pratique : Vérifier si la base existe déjà
-CREATE DATABASE IF NOT EXISTS elzero;
+CREATE DATABASE IF NOT EXISTS my_tab;
 
 -- 💡 Créer avec un encodage spécifique (UTF-8 recommandé)
-CREATE DATABASE elzero 
+CREATE DATABASE my_tab 
 CHARACTER SET utf8mb4 
 COLLATE utf8mb4_unicode_ci;
 
@@ -34,8 +34,8 @@ COLLATE utf8mb4_unicode_ci;
 -- Afficher toutes les bases de données disponibles
 SHOW DATABASES;
 
--- Afficher uniquement les bases dont le nom contient 'elzero'
-SHOW DATABASES LIKE 'elzero';
+-- Afficher uniquement les bases dont le nom contient 'my_tab'
+SHOW DATABASES LIKE 'my_tab';
 
 -- Afficher les bases commençant par 'el'
 SHOW DATABASES LIKE 'el%';
@@ -45,9 +45,9 @@ SHOW DATABASES LIKE 'el%';
    UTILISER UNE BASE DE DONNÉES
    ======================================== */
 
--- Sélectionner la base de données 'elzero' pour l'utiliser
+-- Sélectionner la base de données 'my_tab' pour l'utiliser
 -- Toutes les commandes suivantes s'appliqueront à cette base
-USE elzero;
+USE my_tab;
 
 -- 💡 Vérifier quelle base de données est actuellement sélectionnée
 SELECT DATABASE();
@@ -58,10 +58,10 @@ SELECT DATABASE();
    ======================================== */
 
 -- ⚠️ ATTENTION : Cette commande supprime DÉFINITIVEMENT la base et toutes ses tables
-DROP DATABASE elzero;
+DROP DATABASE my_tab;
 
 -- ✅ Bonne pratique : Vérifier si la base existe avant de la supprimer
-DROP DATABASE IF EXISTS elzero;
+DROP DATABASE IF EXISTS my_tab;
 ```
 
 ---
